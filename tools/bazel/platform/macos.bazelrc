@@ -1,0 +1,6 @@
+
+#
+# Bazel: macOS Builds
+#
+
+build:macos --experimental_inprocess_symlink_creation

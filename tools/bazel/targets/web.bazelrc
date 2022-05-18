@@ -1,0 +1,9 @@
+
+#
+# Bazel: Web Settings
+#
+
+build:web --test_env=LCOV_MERGER=/usr/bin/true
+
+build:browser --define=DISPLAY=true
+build:browser --define=testenv.browser=yes

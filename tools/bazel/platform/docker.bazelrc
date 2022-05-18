@@ -1,0 +1,14 @@
+
+#
+# Bazel: Docker Sandbox
+#
+
+# Docker Sandbox Mode
+# Useful for troubleshooting Remote Build Execution problems
+# See https://docs.bazel.build/versions/master/remote-execution-sandbox.html#prerequisites
+
+build:docker-sandbox --spawn_strategy=docker --strategy=Javac=docker --genrule_strategy=docker
+build:docker-sandbox --define=EXECUTOR=remote
+build:docker-sandbox --experimental_docker_verbose
+build:docker-sandbox --experimental_enable_docker_sandbox
+build:docker-sandbox --experimental_docker_image=gcr.io/cloud-marketplace/google/rbe-ubuntu18-04

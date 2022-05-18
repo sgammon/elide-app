@@ -1,0 +1,8 @@
+
+#
+# Bazel: Android Settings
+#
+
+build:android --java_language_version=8
+build:android --tool_java_language_version=8
+build:android --persistent_android_resource_processor

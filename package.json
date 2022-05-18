@@ -1,0 +1,33 @@
+{
+  "name": "apptemplate",
+  "version": "1.0.0",
+  "description": "Weird Hill to Die On",
+  "repository": "https://github.com/sgammon/elide-app",
+  "author": "Sam Gammon <samuel.gammon@gmail.com>",
+  "private": true,
+  "packageManager": "yarn@3.2.1",
+  "devDependencies": {
+    "@bazel/buildifier": "5.1.0",
+    "@bazel/buildozer": "5.1.0",
+    "@bazel/concatjs": "5.4.2",
+    "@bazel/ibazel": "^0.16.2",
+    "@bazel/jasmine": "5.4.2",
+    "@bazel/labs": "4.6.2",
+    "@bazel/rollup": "5.4.2",
+    "@bazel/typescript": "5.4.2",
+    "jasmine": ">=2.99.0",
+    "jasmine-core": ">=2.99.0",
+    "karma": ">4.0.0",
+    "karma-chrome-launcher": ">=2.0.0",
+    "karma-firefox-launcher": ">=1.0.0",
+    "karma-jasmine": ">=2.0.0",
+    "karma-junit-reporter": ">=2.0.0",
+    "karma-requirejs": ">=1.0.0",
+    "karma-sourcemap-loader": ">=0.3.0",
+    "rollup": ">=2.3.0 <3.0.0",
+    "typescript": ">=3.7.0-beta"
+  },
+  "dependencies": {
+    "requirejs": "^2.1.0"
+  }
+}

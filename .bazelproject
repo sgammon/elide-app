@@ -1,0 +1,25 @@
+directories:
+  .
+  -dist
+  -.ijwb
+  -bazel-*
+
+java_language_level: 11
+derive_targets_from_directories: false
+
+targets:
+  //:package.json
+
+test_flags:
+  --test_strategy=standalone
+
+test_sources:
+  tests/*
+
+additional_languages:
+  android
+  java
+  javascript
+  kotlin
+  typescript
+

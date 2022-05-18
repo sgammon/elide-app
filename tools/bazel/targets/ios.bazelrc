@@ -1,0 +1,20 @@
+
+#
+# Bazel: iOS Settings
+#
+
+build --apple_generate_dsym
+build --objc_generate_linkmap
+build --ios_minimum_os=14.0.0
+build --macos_minimum_os=10.12
+build --xcode_version=13.3.1
+
+build --define=apple.propagate_embedded_extra_outputs=yes
+build --define=apple.package_swift_support=yes
+
+build:ios --test_env=LCOV_MERGER=/usr/bin/true
+
+build:ios --experimental_use_llvm_covmap
+build --experimental_enable_objc_cc_deps
+
+test --strategy=SwiftCompile=local
